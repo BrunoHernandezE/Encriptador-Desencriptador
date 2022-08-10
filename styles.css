@@ -82,6 +82,16 @@ button{
     border-style: none;
     border: 1px solid #0A3871;
 }
+#copy-clipboard {
+    width: 270px;
+    height: 50px;
+    background-color: #fff;
+    color: #0A3871;
+    border-radius: 20px;
+    font-size: 16px;
+    border-style: none;
+    border: 1px solid #0A3871;
+}
 .message-area {
     background-color: #fff;
     width: 88%;
@@ -172,7 +182,8 @@ footer a {
     .buttons {
         position: relative;
         top: 70px;
-        right: 20px;
+        /* right: 80px; */
+        margin-right: 170px;
     }
     footer {
         position: absolute;
