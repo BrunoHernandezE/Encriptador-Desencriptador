@@ -36,24 +36,35 @@ const decryptor = (string) => {
 const printMessage = (message) => {
 
     messageArea.innerHTML = "";
-    messageArea.innerHTML = `<p>${message}</p>`
+    messageArea.innerHTML = `<p>${message}</p>`;
 }
+
+// Limpiamos el placeholder del input de texto.
 
 inputText.addEventListener("focus", () => {
 
     inputText.placeholder = "";    
 })
 
-encryptButton.addEventListener("click", () => {
+// Asignamos el botón de "Encriptar" a la función para encriptar.
 
-    printMessage(encryptor(inputText.value))
+encryptButton.addEventListener("click", () => {
+    printMessage(encryptor(inputText.value));
 })
+
+// Asignamos el botón de "Desencriptar" a la función para desencriptar.
 
 decryptButton.addEventListener("click", () => {
 
-    printMessage(decryptor(inputText.value))
+    printMessage(decryptor(inputText.value));
 })
 
-clipboardCopy.addEventListener("click", () => {
+// Declaramos la funcion para copiar el texto al portapapeles. 
 
-})
+const copyClipboard = () => {
+    let content = document.querySelector(".message-area").innerHTML;
+
+    navigator.clipboard.writeText(content.substring(3, content.length-4))
+}
+// La asignamos a su botón
+clipboardCopy.addEventListener("click", copyClipboard)
