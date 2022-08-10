@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/56d8ea9ce8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="./images/logo-alura.png" alt="Logo Alura" id="logo">
+    </header>
+    <main>
+        <textarea id="text-to-encrypt" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea><br>
+        <span id="ad"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</span><br>
+        <div class="buttons">
+            <button id="encrypt-button">Encriptar</button><br>
+            <button id="decrypt-button">Desencriptar</button>
+        </div>
+        <button id="copy-clipboard"><i class="fa-solid fa-copy"></i></button>
+        <div class="message-area">
+            <h2>Ningun mensaje fue encontrado</h2>
+            <img src="./images/buscar-mensaje.png" alt="no-text-image">
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+    </main>
+    <footer>
+        Encriptador realizado por <a href="https://twitter.com/BrunoHE_2001" target="_blank">Bruno Hernandez</a>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
